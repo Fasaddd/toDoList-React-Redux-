@@ -1,0 +1,51 @@
+.ToDoList{
+    text-align: center;
+    width: 100%;
+}
+.List{
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 2px 3px #ccc;
+    border: 1px solid #eee;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.List input{
+    width: 60%;
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: white;
+    font: inherit;
+    padding: 6px 10px;
+}
+.ButtonOrder{
+    background-color: #198600;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #022000;
+    color: white;
+    font-family: inherit;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    box-shadow: 2px 2px 2px #966909;
+}
+.ButtonOrder:hover{
+    background-color: #41d40a;
+    transition-duration: 0.5s;
+}
+.ButtonOrder:disabled {
+    background-color: rgb(76, 83, 88);
+    border: 1px solid #7E7365;
+    color: #ccc;
+    cursor: default;
+}
+
+.ButtonOrder:hover:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+.ButtonOrder:not(:disabled) {
+    animation: enable 0.3s linear;
+}
